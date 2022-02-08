@@ -13,7 +13,7 @@ apt install apache2 -y
 apt install python3-certbot-apache -y
 apt install unzip -y
 apt-get install software-properties-common
-wget -O invoice-ninja.zip https://download.invoiceninja.com/
+wget -O invoice-ninja.zip https://github.com/invoiceninja/invoiceninja/releases/download/v5.3.56/invoiceninja.zip
 mkdir -p /var/www/
 unzip invoice-ninja.zip -d /var/www/
 mv /var/www/ninja /var/www/invoice-ninja
