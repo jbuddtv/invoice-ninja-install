@@ -15,9 +15,11 @@ exit;
 Now we need to configure apache
 
 Create a new file
+
 sudo nano /etc/apache2/sites-available/invoice-ninja.conf
 
 Paste the following and change the ServerName with your domain name.
+
 
 <VirtualHost *:80>
     ServerName invoice.buddtechnology.com
@@ -41,7 +43,9 @@ Save the file
 Run the following commands
 
 sudo a2ensite invoice-ninja.conf
+
 sudo a2enmod rewrite
+
 sudo systemctl restart apache2
 
 If you do see the default apache page run the following command to disable the default page.
