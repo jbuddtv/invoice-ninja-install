@@ -3,9 +3,13 @@ After running the prereq install you need to create a database manually
 To Create mysql database
 
 create database invoiceninja;
+
 create user ninja@localhost identified by 'SetPasswordHere';
+
 grant all privileges on invoiceninja.* to ninja@localhost;
+
 flush privileges;
+
 exit;
 
 Now we need to configure apache
